@@ -1,3 +1,4 @@
+import os
 import socket
 import struct
 import time
@@ -64,7 +65,6 @@ def send_message(type: str, data: any):
 		typeI = 2
 		more = struct.pack("!f", float(data))
 		print("SetPlaybackRate = " + data)
-		output("test_succeed proto-rate")
 
 	if (type == "unpause"):
 		typeI = 3
@@ -229,6 +229,8 @@ def recv_message():
 			type = "gameloc"
 			lenloc = struct.unpack("!I", sock.recv(4))[0]
 			gamedir = struct.unpack("!"+str(lenloc)+"s", sock.recv(lenloc))[0].decode()
+			# TODO: Compare with location of python script minus 3 directories
+			# Trouble with symlinks for me
 			output("test_pure_succeed proto-gloc")
 			print("GameLocation = " + gamedir)
 
