@@ -31,7 +31,7 @@ while True:
 			try: sock.connect((HOST, PORT))
 			except: 
 				print("Connection failure. Close the game, wait a minute, then try again.")
-				output("test_fail proto-conn")
+				output("test_pure_fail proto-conn")
 				continue
 			sock.setblocking(False)
 			print("Connected successfully!")
