@@ -1,5 +1,5 @@
 version 4
-start save TAS_TEST
+start save p2tastests/TAS_TEST
 0>|||svar_add __tas_attempts 1; cond ?__tas_attempts=2 "test_pure_succeed playback-checkfail4; test_fail playback-autoaim4"|
 1>>autoaim 100 200 300
 +1>>check ang -68.867095947265625 75.17348480224609375 angepsilon 0.0001; autoaim 200 300 400 2
