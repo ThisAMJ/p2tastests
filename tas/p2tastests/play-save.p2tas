@@ -1,0 +1,3 @@
+version 7
+start save p2tastests/tube-ride-end
+0>|||test_pure_succeed play-any; conds map=sp_a2_bts6 "test_succeed play-save" "test_fail play-save"

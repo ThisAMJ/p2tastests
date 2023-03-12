@@ -1,0 +1,22 @@
+version 4
+start save TAS_TEST
+0>|||svar_add __tas_attempts 1; cond ?__tas_attempts=2 "test_pure_succeed playback-checkfail4; test_fail playback-autoaim4"|
+1>>autoaim 100 200 300
++1>>check ang -68.867095947265625 75.17348480224609375 angepsilon 0.0001; autoaim 200 300 400 2
++1>>check ang -64.225594 67.609955 angepsilon 0.001
++1>>check ang -59.584091 60.046391 angepsilon 0.001; autoaim ent box[3] 2
++1>>check ang -47.4176483154 142.5231933594 angepsilon 0.0001
++1>>check ang -35.2512016296 -135 angepsilon 0.0001; autoaim ent npc_portal_turret_floor[4]
++1>>check ang -35.2512016296 -135 angepsilon 0.0001; autoaim ent thisentitydoesnotexist
++1>>check ang -35.2512016296 -135 angepsilon 0.0001; autoaim ent box
++1>>check ang 6.02120161056518554688 -170.5630035400390625 angepsilon 0.0001; autoaim ent box[0]
++1>>check ang 6.02120161056518554688 -170.5630035400390625 angepsilon 0.0001; autoaim ent box[1]
++1>>check ang 6.08281660079956054688 -179.9122619628906250 angepsilon 0.0001; autoaim ent box[2] 2
++1>>check ang 6.0386729240 175.0375823975 angepsilon 0.001
++1>>check ang 5.99458312988281250000  169.9876403808593750 angepsilon 0.0001; autoaim ent npc_portal_turret_floor
++1>>check ang 8.3182840347 -165.3007507324 angepsilon 0.05; autoaim ent npc_portal_turret_floor[0]// the turrets move around a bit
++1>>check ang 8.3182840347 -165.3007507324 angepsilon 0.05; autoaim ent npc_portal_turret_floor[1]
++1>>check ang 8.5695028305 -175.0841369629 angepsilon 0.05; autoaim ent npc_portal_turret_floor[2]
++1>>check ang 8.5737457275  174.9436950684 angepsilon 0.05; autoaim ent npc_portal_turret_floor[3]
++1>>check ang 8.3112411499  165.2505645752 angepsilon 0.05
++1>|||test_pure_succeed playback-checksuccess4; test_succeed playback-autoaim4

@@ -1,0 +1,3 @@
+version 7
+start next map sp_a2_bts6
+0>|||test_pure_succeed play-any; conds map=sp_a2_core "test_succeed play-next-map" "test_fail play-next-map"

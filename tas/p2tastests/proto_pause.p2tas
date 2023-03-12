@@ -1,0 +1,6 @@
+version 7
+start save p2tastests/TAS_TEST
+
+0>|||__proto_instruction pause; __proto_instruction 1
+2>|||sar_session; __proto_instruction 1; hwait 12 "__proto_instruction unpause; __proto_instruction 1; __proto_instruction 1"
+4>|||sar_session

@@ -1,0 +1,3 @@
+version 7
+start now
+0>|||test_pure_succeed play-any; test_succeed play-now

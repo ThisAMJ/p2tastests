@@ -1,0 +1,3 @@
+version 7
+start map sp_a2_laser_chaining
+0>|||test_pure_succeed play-any; conds map=sp_a2_laser_chaining "test_succeed play-map" "test_fail play-map"
