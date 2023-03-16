@@ -1,0 +1,58 @@
+version 7
+start save p2tastests/TAS_TEST
+0>|||svar_add __tas_attempts 1; cond ?__tas_attempts=2 "test_fail playback-autoaim-interp"
+1>>autoaim 100 200 300 1 linear
++1>>check ang -68.867095947265625 75.17348480224609375 angepsilon 0.0001; autoaim 200 300 400 2 linear
++1>>check ang -64.225594   67.609955 angepsilon 0.001
++1>>check ang -59.584091   60.046391 angepsilon 0.001; autoaim ent box 10 sine
++1>>check ang -57.978615   63.212799 angepsilon 0.001
++1>>check ang -53.319344   72.402084 angepsilon 0.001
++1>>check ang -46.062355   86.714729 angepsilon 0.001
++1>>check ang -36.918015  104.749718 angepsilon 0.001
++1>>check ang -26.781441  124.741653 angepsilon 0.001
++1>>check ang -16.644863  144.733582 angepsilon 0.001
++1>>check ang  -7.500528  162.768555 angepsilon 0.001
++1>>check ang  -0.243539  177.081207 angepsilon 0.001
++1>>check ang   4.415730 -173.729492 angepsilon 0.001
++1>>check ang   6.021207 -170.563110 angepsilon 0.001; autoaim ent box[1] 10 sin
++1>>check ang   6.022716 -170.791901 angepsilon 0.001
++1>>check ang   6.027094 -171.455872 angepsilon 0.001
++1>>check ang   6.033914 -172.490036 angepsilon 0.001
++1>>check ang   6.042506 -173.793167 angepsilon 0.001
++1>>check ang   6.052032 -175.237701 angepsilon 0.001
++1>>check ang   6.061557 -176.682236 angepsilon 0.001
++1>>check ang   6.070149 -177.985367 angepsilon 0.001
++1>>check ang   6.076969 -179.019531 angepsilon 0.001
++1>>check ang   6.081347 -179.683502 angepsilon 0.001
++1>>check ang   6.082856 -179.912292 angepsilon 0.001; autoaim ent box[2] 10 cubic
++1>>check ang   6.082503 -179.952698 angepsilon 0.001
++1>>check ang   6.080031  179.764496 angepsilon 0.001
++1>>check ang   6.073323  178.996887 angepsilon 0.001
++1>>check ang   6.060260  177.502075 angepsilon 0.001
++1>>check ang   6.038723  175.037659 angepsilon 0.001
++1>>check ang   6.017186  172.573242 angepsilon 0.001
++1>>check ang   6.004122  171.078445 angepsilon 0.001
++1>>check ang   5.997414  170.310837 angepsilon 0.001
++1>>check ang   5.994943  170.028046 angepsilon 0.001
++1>>check ang   5.994589  169.987640 angepsilon 0.001; autoaim ent box 10 exponential
++1>>check ang   5.994641  170.025635 angepsilon 0.001
++1>>check ang   5.994797  170.139603 angepsilon 0.001
++1>>check ang   5.995421  170.595444 angepsilon 0.001
++1>>check ang   5.997916  172.418808 angepsilon 0.001
++1>>check ang   6.007898  179.712280 angepsilon 0.001
++1>>check ang   6.017880 -172.994263 angepsilon 0.001
++1>>check ang   6.020375 -171.170898 angepsilon 0.001
++1>>check ang   6.020999 -170.715057 angepsilon 0.001
++1>>check ang   6.021155 -170.601074 angepsilon 0.001
++1>>check ang   6.021207 -170.563110 angepsilon 0.001; autoaim ent box[2] 10 exp
++1>>check ang   6.021155 -170.601105 angepsilon 0.001
++1>>check ang   6.020999 -170.715073 angepsilon 0.001
++1>>check ang   6.020376 -171.170914 angepsilon 0.001
++1>>check ang   6.017880 -172.994278 angepsilon 0.001
++1>>check ang   6.007898  179.712265 angepsilon 0.001
++1>>check ang   5.997917  172.418793 angepsilon 0.001
++1>>check ang   5.995421  170.595428 angepsilon 0.001
++1>>check ang   5.994797  170.139587 angepsilon 0.001
++1>>check ang   5.994641  170.025635 angepsilon 0.001
++1>>check ang   5.994589  169.987640 angepsilon 0.001
++1>|||test_succeed playback-autoaim-interp
