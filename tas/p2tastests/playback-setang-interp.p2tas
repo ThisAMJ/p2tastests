@@ -1,0 +1,67 @@
+version 7
+start save p2tastests/TAS_TEST
+0>|||svar_add __tas_attempts 1; cond ?__tas_attempts=2 "test_fail playback-setang-interp"
+1>>setang 45 90
++1>>check ang 45 90 angepsilon 0.0001; setang 0 0 1 linear
++1>>check angepsilon 0.0001 ang  -0          0       ; setang -45 45 10
++1>>check angepsilon 0.0001 ang  -4.5        4.5
++1>>check angepsilon 0.0001 ang  -9          9  
++1>>check angepsilon 0.0001 ang -13.5       13.5
++1>>check angepsilon 0.0001 ang -18         18  
++1>>check angepsilon 0.0001 ang -22.5       22.5
++1>>check angepsilon 0.0001 ang -27         27  
++1>>check angepsilon 0.0001 ang -31.5       31.5
++1>>check angepsilon 0.0001 ang -36         36  
++1>>check angepsilon 0.0001 ang -40.5       40.5
++1>>check angepsilon 0.0001 ang -45         45       ; setang 0 -45 10 sine
++1>>check angepsilon 0.0001 ang -43.898773  42.797542
++1>>check angepsilon 0.0001 ang -40.702885  36.405762
++1>>check angepsilon 0.0001 ang -35.725170  26.450333
++1>>check angepsilon 0.0001 ang -29.452883  13.905760
++1>>check angepsilon 0.0001 ang -22.5       -0.000003
++1>>check angepsilon 0.0001 ang -15.547116 -13.905769
++1>>check angepsilon 0.0001 ang -9.274832  -26.450336
++1>>check angepsilon 0.0001 ang -4.297116  -36.405769
++1>>check angepsilon 0.0001 ang -1.101229  -42.797543
++1>>check angepsilon 0.0001 ang  0         -45       ; setang 45 0 10 sin
++1>>check angepsilon 0.0001 ang  1.101228  -43.898773
++1>>check angepsilon 0.0001 ang  4.297118  -40.702885
++1>>check angepsilon 0.0001 ang  9.274832  -35.725170
++1>>check angepsilon 0.0001 ang  15.547118 -29.452885
++1>>check angepsilon 0.0001 ang  22.5      -22.500004
++1>>check angepsilon 0.0001 ang  29.452885 -15.547120
++1>>check angepsilon 0.0001 ang  35.725166  -9.274835
++1>>check angepsilon 0.0001 ang  40.702881  -4.297114
++1>>check angepsilon 0.0001 ang  43.898769  -1.101225
++1>>check angepsilon 0.0001 ang  45          0.000002; setang -70 135 10 cubic
++1>>check angepsilon 0.0001 ang  44.540001   0.540002
++1>>check angepsilon 0.0001 ang  41.32       4.320002
++1>>check angepsilon 0.0001 ang  32.579998  14.580004
++1>>check angepsilon 0.0001 ang  15.559998  34.560005
++1>>check angepsilon 0.0001 ang -12.5       67.5
++1>>check angepsilon 0.0001 ang -40.560009 100.440010
++1>>check angepsilon 0.0001 ang -57.579994 120.419998
++1>>check angepsilon 0.0001 ang -66.32     130.680008
++1>>check angepsilon 0.0001 ang -69.540001 134.460007
++1>>check angepsilon 0.0001 ang -70        134.999985; setang 20 -40 10 exponential
++1>>check angepsilon 0.0001 ang -69.824219 134.658188
++1>>check angepsilon 0.0001 ang -69.296875 133.632797
++1>>check angepsilon 0.0001 ang -67.187500 129.531235
++1>>check angepsilon 0.0001 ang -58.750000 113.124985
++1>>check angepsilon 0.0001 ang -25.000000  47.499992
++1>>check angepsilon 0.0001 ang   8.750004 -18.125015
++1>>check angepsilon 0.0001 ang  17.187500 -34.531250
++1>>check angepsilon 0.0001 ang  19.296875 -38.632812
++1>>check angepsilon 0.0001 ang  19.824219 -39.658203
++1>>check angepsilon 0.0001 ang  20        -40       ; setang 0 0 10 exp
++1>>check angepsilon 0.0001 ang  19.960938 -39.921875
++1>>check angepsilon 0.0001 ang  19.843750 -39.687500
++1>>check angepsilon 0.0001 ang  19.375000 -38.750000
++1>>check angepsilon 0.0001 ang  17.500000 -35.000000
++1>>check angepsilon 0.0001 ang  10        -20
++1>>check angepsilon 0.0001 ang   2.499999  -4.999998
++1>>check angepsilon 0.0001 ang   0.625000  -1.249999
++1>>check angepsilon 0.0001 ang   0.156250  -0.312499
++1>>check angepsilon 0.0001 ang   0.039062  -0.078124
++1>>check angepsilon 0.0001 ang   0          0.000001
++12>|||test_succeed playback-setang-interp
