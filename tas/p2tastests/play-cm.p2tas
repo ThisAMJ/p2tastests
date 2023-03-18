@@ -1,3 +1,4 @@
 version 7
 start cm sp_a2_laser_chaining
-0>|||test_pure_succeed play-any; conds #sv_bonus_challenge=1 "test_succeed play-cm" "test_fail play-cm"
+0>|||test_pure_succeed play-any; svar_set __cm_test_success 0; ent_fire challenge_mode_end_node addoutput "onuser1 @command,command,svar_set __cm_test_success 1,0,-1"; ent_fire challenge_mode_end_node fireuser1
++2>|||conds #sv_bonus_challenge=1&?__cm_test_success=1 "test_succeed play-cm" "test_fail play-cm"
