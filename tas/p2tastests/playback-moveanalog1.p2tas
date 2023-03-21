@@ -1,0 +1,21 @@
+version 1
+start save p2tastests/TAS_TEST
+0>|||svar_add __tas_attempts 1; cond ?__tas_attempts=2 "test_pure_succeed playback-checkfail1; test_fail playback-moveanalog1"
+1>   0    1  ||||check posepsilon 0 pos 64        64        -127.968750
++4>  0    0  ||||check posepsilon 0 pos 59.805557 63.999596 -127.968750
++15> 0   -1  ||||check posepsilon 0 pos 48.916664 63.998550 -127.968750
++4>  0    0  ||||check posepsilon 0 pos 53.111107 63.998955 -127.968750
++15> 1    0  ||||check posepsilon 0 pos 64        64        -127.968750
++4>  0    0  ||||check posepsilon 0 pos 63.999596 68.194458 -127.968750
++15>-1    0  ||||check posepsilon 0 pos 63.998550 79.083344 -127.968750
++4>  0    0  ||||check posepsilon 0 pos 63.998955 74.888885 -127.968750
++15> 0    0.5||||check posepsilon 0 pos 64        64        -127.968750
++4>  0    0  ||||check posepsilon 0 pos 62.236111 63.999832 -127.968750
++6>  0   -0.5||||check posepsilon 0 pos 60.708332 63.999687 -127.968750
++4>  0    0  ||||check posepsilon 0 pos 62.472221 63.999855 -127.968750
++6>  0.5  0  ||||check posepsilon 0 pos 64        64        -127.968750
++4>  0    0  ||||check posepsilon 0 pos 63.999832 65.763885 -127.968750
++6> -0.5  0  ||||check posepsilon 0 pos 63.999687 67.291664 -127.968750
++4>  0    0  ||||check posepsilon 0 pos 63.999855 65.527779 -127.968750
++6>>check posepsilon 0 pos 64        64        -127.968750
++1>|||test_pure_succeed playback-checksuccess1; test_succeed playback-moveanalog1

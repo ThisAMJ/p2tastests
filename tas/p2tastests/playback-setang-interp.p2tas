@@ -3,9 +3,9 @@ start save p2tastests/TAS_TEST
 0>|||svar_add __tas_attempts 1; cond ?__tas_attempts=2 "test_fail playback-setang-interp"
 1>>setang 45 90
 +1>>check ang 45 90 angepsilon 0.0001; setang 0 0 1 linear
-+1>>check angepsilon 0.0001 ang  -0          0       ; setang -45 45 10
-+1>>check angepsilon 0.0001 ang  -4.5        4.5
-+1>>check angepsilon 0.0001 ang  -9          9  
++1>>check angepsilon 0.0001 ang  0           0       ; setang -45 45 10
++1>>check angepsilon 0.0001 ang -4.5         4.5
++1>>check angepsilon 0.0001 ang -9           9  
 +1>>check angepsilon 0.0001 ang -13.5       13.5
 +1>>check angepsilon 0.0001 ang -18         18  
 +1>>check angepsilon 0.0001 ang -22.5       22.5

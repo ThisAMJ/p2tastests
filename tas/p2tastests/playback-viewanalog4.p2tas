@@ -1,0 +1,13 @@
+version 4
+start save p2tastests/TAS_TEST
+0>|||svar_add __tas_attempts 1; cond ?__tas_attempts=2 "test_pure_succeed playback-checkfail4; test_fail playback-viewanalog4"
+1>|  0  1|||check angepsilon 0 ang  0 -179.994507
++1>| 0 -1|||check angepsilon 0 ang -1 -179.994507
++1>| 1  0|||check angepsilon 0 ang  0 -179.994507
++1>|-1  0|||check angepsilon 0 ang  0  179.005493
++1>| 0  2|||check angepsilon 0 ang  0 -179.994507
++1>| 0 -2|||check angepsilon 0 ang -2 -179.994507
++1>| 2  0|||check angepsilon 0 ang  0 -179.994507
++1>|-2  0|||check angepsilon 0 ang  0  178.005493
++1>| 0  0|||check angepsilon 0 ang 0 -179.994507
++20>|||test_pure_succeed playback-checksuccess4; test_succeed playback-viewanalog4
