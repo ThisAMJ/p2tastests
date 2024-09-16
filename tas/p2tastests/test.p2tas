@@ -1,0 +1,19 @@
+version 7
+start map sp_a2_laser_chaining
+0>|||script Entities.FindByClassname(null, "npc_portal_turret_floor").SetAngles(0, 180, 0)
++1>|||script Entities.FindByClassname(Entities.FindByClassname(null, "npc_portal_turret_floor"), "npc_portal_turret_floor").SetAngles(0, 180, 0)
++1>|||script Entities.FindByClassname(Entities.FindByClassname(Entities.FindByClassname(null, "npc_portal_turret_floor"), "npc_portal_turret_floor"), "npc_portal_turret_floor").SetAngles(0, 180, 0)
++1>|||script Entities.FindByClassname(Entities.FindByClassname(Entities.FindByClassname(Entities.FindByClassname(null, "npc_portal_turret_floor"), "npc_portal_turret_floor"), "npc_portal_turret_floor"), "npc_portal_turret_floor").SetAngles(0, 180, 0)
++1>|||script Entities.FindByName(null, "box").SetAngles(0, 180, 0)
++1>|||script Entities.FindByName(Entities.FindByName(null, "box"), "box").SetAngles(0, 180, 0)
++1>|||script Entities.FindByName(Entities.FindByName(Entities.FindByName(null, "box"), "box"), "box").SetAngles(0, 180, 0)
++1>|||script Entities.FindByName(null, "box").SetOrigin(Vector(-360.469, -8, -109.469))
++1>|||script Entities.FindByName(Entities.FindByName(null, "box"), "box").SetOrigin(Vector(-360.469, 64, -109.469))
++1>|||script Entities.FindByName(Entities.FindByName(Entities.FindByName(null, "box"), "box"), "box").SetOrigin(Vector(-360.469, 136, -109.469))
++1>|||script Entities.FindByClassname(null, "npc_portal_turret_floor").SetOrigin(Vector(-355.469, -44, -127.681))
++1>|||script Entities.FindByClassname(Entities.FindByClassname(null, "npc_portal_turret_floor"), "npc_portal_turret_floor").SetOrigin(Vector(-355.469, 28, -127.681))
++1>|||script Entities.FindByClassname(Entities.FindByClassname(Entities.FindByClassname(null, "npc_portal_turret_floor"), "npc_portal_turret_floor"), "npc_portal_turret_floor").SetOrigin(Vector(-355.469, 100, -127.681))
++1>|||script Entities.FindByClassname(Entities.FindByClassname(Entities.FindByClassname(Entities.FindByClassname(null, "npc_portal_turret_floor"), "npc_portal_turret_floor"), "npc_portal_turret_floor"), "npc_portal_turret_floor").SetOrigin(Vector(-355.469, 172, -127.681))
++1>|||setpos 64 64 -127.96875; setang 0 180
++1>|||portal_place 0 0 -511.969 -96.031 -71.971 -0.000 0.000 0.000; portal_place 0 1 -511.971 224.031 -71.971 -0.000 0.000 0.000
++1>|||save p2tastests/TAS_TEST
